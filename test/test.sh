@@ -25,6 +25,6 @@ curl 127.0.0.1:12345/status
 ./client -c del -k testkey
 
 ## using benchmark to test tcp service
-../cache-benchmark -type tcp -n 100000 -r 100000 -t set
+../cache-benchmark/cache-benchmark -type tcp -n 100000 -r 100000 -t set
 
-../cache-benchmark -type tcp -n 100000 -r 100000 -t get
+../cache-benchmark/cache-benchmark -type tcp -n 100000 -r 100000 -t get
